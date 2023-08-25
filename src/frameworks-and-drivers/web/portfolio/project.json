@@ -1,0 +1,80 @@
+{
+  "name": "web-portfolio",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "./src/frameworks-and-drivers/web/portfolio/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nx/vite:build",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "outputPath": "dist/src/frameworks-and-drivers/web/portfolio"
+      },
+      "configurations": {
+        "development": {
+          "mode": "development"
+        },
+        "production": {
+          "mode": "production"
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nx/vite:dev-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "web-portfolio:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "web-portfolio:build:development",
+          "hmr": true
+        },
+        "production": {
+          "buildTarget": "web-portfolio:build:production",
+          "hmr": false
+        }
+      }
+    },
+    "preview": {
+      "executor": "@nx/vite:preview-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "web-portfolio:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "web-portfolio:build:development"
+        },
+        "production": {
+          "buildTarget": "web-portfolio:build:production"
+        }
+      }
+    },
+    "test": {
+      "executor": "@nx/vite:test",
+      "outputs": ["{options.reportsDirectory}"],
+      "options": {
+        "passWithNoTests": true,
+        "reportsDirectory": "../../../../coverage/src/frameworks-and-drivers/web/portfolio"
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "./src/frameworks-and-drivers/web/portfolio/**/*.{ts,tsx,js,jsx}"
+        ]
+      }
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "web-portfolio:build"
+      }
+    }
+  },
+  "tags": []
+}
