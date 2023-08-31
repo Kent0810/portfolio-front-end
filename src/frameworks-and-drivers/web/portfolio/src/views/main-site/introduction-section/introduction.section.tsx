@@ -19,12 +19,14 @@ export const IntroductionSection: React.FunctionComponent = () => {
           <p>
             I'm a software engineer based in Ho Chi Minh City, Vietnam. I
             specialize in building exceptional websites, applications, and
-            everything in between.
+            everything in between. With a passion for delivering high-quality
+            solutions, I strive to create seamless user experiences that leave a
+            lasting impact.
           </p>
         </div>
         <div className="introduction_content_button">
           <a className="introduction_content_button_link" href="#contact">
-            Get In Touch
+            Contact Me !
           </a>
         </div>
       </div>

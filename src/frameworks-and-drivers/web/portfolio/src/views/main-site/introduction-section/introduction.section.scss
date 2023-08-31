@@ -1,11 +1,12 @@
 @import '../../../styles.scss';
 .introduction_content {
   //doesn't need width as it's a flex:1 (fill in remainding space) child
-  width: fit-content;
-  display: block;
+
   &_title {
     h1 {
       font-size: 9.6rem;
+      margin: 0;
+      line-height: 1;
       span {
         color: $brand-color;
         font-weight: 700;
@@ -13,18 +14,22 @@
     }
   }
   &_sub_title {
-    font-size: 3.6rem;
+    font-size: 2.3rem;
+    margin: 0;
+    h2 {
+      font-weight: 200 !important;
+    }
+    line-height: 1.2;
     span {
+      font-weight: bold;
       color: $brand-color;
-      font-weight: 700;
     }
   }
   &_description {
     font-size: 1.8rem;
-    font-weight: 200;
-    line-height: 2.8rem;
     margin-top: 2.4rem;
-    margin: 2.4rem 0;
+    margin-bottom: 4.6rem;
+    font-weight: 200 !important;
   }
   &_button {
     &_link {
