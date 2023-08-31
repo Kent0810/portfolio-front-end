@@ -1,0 +1,47 @@
+{
+  "name": "errors",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "src/enterprise-business-rules/errors/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/src/enterprise-business-rules/errors",
+        "main": "src/enterprise-business-rules/errors/src/index.ts",
+        "tsConfig": "src/enterprise-business-rules/errors/tsconfig.lib.json",
+        "assets": ["src/enterprise-business-rules/errors/*.md"]
+      }
+    },
+    "publish": {
+      "command": "node tools/scripts/publish.mjs errors {args.ver} {args.tag}",
+      "dependsOn": ["build"]
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "src/enterprise-business-rules/errors/**/*.ts",
+          "src/enterprise-business-rules/errors/package.json"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "src/enterprise-business-rules/errors/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
+      }
+    }
+  },
+  "tags": []
+}

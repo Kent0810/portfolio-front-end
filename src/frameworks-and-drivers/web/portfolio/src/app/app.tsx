@@ -1,14 +1,11 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-import styles from './app.module.scss';
-
-import NxWelcome from './nx-welcome';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { routes } from './routes';
 
 export function App() {
-  return (
-    <div>
-      <NxWelcome title="Web-portfolio" />
-    </div>
-  );
+  const router = createBrowserRouter(routes);
+
+  return <RouterProvider router={router}></RouterProvider>;
 }
 
 export default App;

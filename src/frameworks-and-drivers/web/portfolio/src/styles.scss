@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+$text-color: #ebecf3;
+$brand-color: #0aff9d;
+$background-color: #111;
+$side-nav-background-color: #080808;
+$heading-color: hsla(0, 0%, 7%, 0.25);
+
+:root {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+svg {
+  fill: currentColor;
+}
+body {
+  margin: 0;
+  padding: 0;
+  color: $text-color;
+  background-color: $background-color;
+  font-family: 'Poppins', sans-serif;
+  a {
+    text-decoration: none;
+    color: $text-color;
+  }
+}

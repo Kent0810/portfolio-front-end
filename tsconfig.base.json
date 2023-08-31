@@ -14,7 +14,14 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@portfolio/frameworks-and-drivers/ui": [
+        "src/frameworks-and-drivers/ui/src/index.ts"
+      ],
+      "@portfolio/src/enterprise-business-rules/errors": [
+        "src/enterprise-business-rules/errors/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
