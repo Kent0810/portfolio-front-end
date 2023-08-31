@@ -1,6 +1,11 @@
 import './header.scss';
+import Pdf from '../../../assets/documents/Bui-Anh-Kent-CV2023.pdf';
 
 export const Header: React.FunctionComponent = () => {
+  const OpenPdf = () => {
+    window.open(Pdf);
+  };
+
   return (
     <header className="heading">
       <div className="heading-link">
@@ -44,7 +49,9 @@ export const Header: React.FunctionComponent = () => {
         </span>
       </div>
 
-      <button className="outline_button">My Resume</button>
+      <button onClick={OpenPdf} className="outline_button">
+        My Resume
+      </button>
     </header>
   );
 };
