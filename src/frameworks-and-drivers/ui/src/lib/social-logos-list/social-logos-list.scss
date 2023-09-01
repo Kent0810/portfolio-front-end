@@ -1,0 +1,21 @@
+@import '../../../../web/portfolio/src/styles.scss';
+
+.heading-link {
+  gap: 1.6rem;
+  display: flex;
+  padding-top: 10px;
+  span {
+    a {
+      color: $text-color;
+      &:hover {
+        opacity: 1;
+        color: $brand-color;
+      }
+    }
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.5;
+  }
+}

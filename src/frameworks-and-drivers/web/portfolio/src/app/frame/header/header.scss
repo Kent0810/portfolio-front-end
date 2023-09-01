@@ -17,25 +17,6 @@
   position: sticky;
   top: 0;
 
-  &-link {
-    gap: 1.8rem;
-    display: flex;
-    padding-top: 10px;
-    span {
-      a {
-        color: $text-color;
-        &:hover {
-          opacity: 1;
-          color: $brand-color;
-        }
-      }
-    }
-  }
-  a {
-    color: inherit;
-    text-decoration: none;
-    opacity: 0.5;
-  }
   .outline_button {
     outline: none;
     cursor: pointer;
@@ -49,6 +30,7 @@
     z-index: 20;
     overflow: hidden;
     transition: color 0.2s;
+
     &:hover {
       color: $background-color;
       &::before {
