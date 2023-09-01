@@ -1,9 +1,11 @@
 import {
+  Chip,
   SectionWrapper,
   SocialLogosList,
 } from '@portfolio/frameworks-and-drivers/ui';
 import React from 'react';
 import './about.section.scss';
+import { AT_WORK_SKILLS, FOR_FUN_SKILLS } from './skills.common';
 
 export const AboutSection: React.FunctionComponent = () => {
   return (
@@ -81,17 +83,9 @@ export const AboutSection: React.FunctionComponent = () => {
               <span>Use at work</span>
             </h4>
             <div className="stats">
-              <span className="chip">JavaScript</span>
-              <span className="chip">TypeScript</span>
-              <span className="chip">HTML</span>
-              <span className="chip">CSS</span>
-              <span className="chip">React</span>
-              <span className="chip">NodeJs</span>
-              <span className="chip">Express</span>
-              <span className="chip">DynamoDB</span>
-              <span className="chip">HashiCorp</span>
-              <span className="chip">Terraform</span>
-              <span className="chip">Java</span>
+              {AT_WORK_SKILLS.map((skill) => (
+                <Chip chipValue={skill} />
+              ))}
             </div>
           </div>
           <div className="about-content-right-stats-2">
@@ -111,17 +105,9 @@ export const AboutSection: React.FunctionComponent = () => {
               <span>Use for fun</span>
             </h4>
             <div className="stats">
-              <span className="chip">JavaScript</span>
-              <span className="chip">TypeScript</span>
-              <span className="chip">HTML</span>
-              <span className="chip">CSS</span>
-              <span className="chip">React</span>
-              <span className="chip">NodeJs</span>
-              <span className="chip">Express</span>
-              <span className="chip">DynamoDB</span>
-              <span className="chip">HashiCorp</span>
-              <span className="chip">Terraform</span>
-              <span className="chip">Java</span>
+              {FOR_FUN_SKILLS.map((skill) => (
+                <Chip chipValue={skill} />
+              ))}
             </div>
           </div>
         </div>
