@@ -1,0 +1,49 @@
+@import '../../../styles.scss';
+.contact-content {
+  max-width: 700px;
+  margin: auto;
+  border-radius: 1.2rem;
+  .contact-title {
+    font-size: 6.6rem;
+
+    text-align: center;
+    line-height: 0;
+    margin-bottom: -2rem;
+    h1 {
+      font-weight: 900;
+    }
+    span {
+      color: $brand-color;
+      font-weight: 900;
+    }
+  }
+  .contact-description {
+    font-size: 1.8rem;
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: 2.2rem;
+    a {
+      color: $brand-color;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  .contact-email {
+    margin: auto;
+    width: fit-content;
+    .link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      span {
+        margin-left: 0.5rem;
+        font-size: 2rem;
+        font-weight: 500;
+      }
+      &:hover {
+        color: $brand-color;
+      }
+    }
+  }
+}
