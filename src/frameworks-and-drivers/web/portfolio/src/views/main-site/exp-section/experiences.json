@@ -1,0 +1,26 @@
+[
+  {
+    "title": "AtWare Viet Nam",
+    "duration": "2023-2023",
+    "subTitle": "Software Engineer Fresher",
+    "location": "Ho Chi Minh City, Vietnam",
+    "description": "I help build and scale Google Photos. Increased throughput of our primary services by 70%. Migrated backend service from Java to Go. Also helped make it look prettier.",
+    "skills": ["Java", "TypeScript", "Terraform"]
+  },
+  {
+    "title": "AtWare Viet Nam",
+    "duration": "2023-2023",
+    "subTitle": "Software Engineer Intern",
+    "location": "Ho Chi Minh City",
+    "description": "I help build and scale Google Photos. Increased throughput of our primary services by 70%. Migrated backend service from Java to Go. Also helped make it look prettier.",
+    "skills": ["Java", "TypeScript", "Terraform"]
+  },
+  {
+    "title": "AtWare Viet Nam",
+    "duration": "2023-2023",
+    "subTitle": "Software Engineer Intern",
+    "location": "Ho Chi Minh City",
+    "description": "I help build and scale Google Photos. Increased throughput of our primary services by 70%. Migrated backend service from Java to Go. Also helped make it look prettier.",
+    "skills": ["Java", "TypeScript", "Terraform"]
+  }
+]

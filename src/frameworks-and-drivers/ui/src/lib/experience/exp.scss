@@ -1,0 +1,37 @@
+@import '../../../../web/portfolio/src/styles.scss';
+.exp {
+  margin-bottom: 2rem;
+  padding: 0 1.2rem 2.4rem;
+  border-bottom: 1px solid #232323;
+  &-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 0;
+    margin-bottom: -2rem;
+    font-size: 2.2rem;
+    h5 {
+      font-weight: 300;
+    }
+  }
+  &-sub-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 0;
+    margin-bottom: -2rem;
+    h5 {
+      font-size: 1.8rem;
+      font-weight: 300;
+      &:first-child {
+        font-weight: 700;
+        color: $brand-color;
+      }
+    }
+  }
+  &-description {
+    font-size: 1.8rem;
+    font-weight: 200;
+    color: $text-color;
+  }
+}
