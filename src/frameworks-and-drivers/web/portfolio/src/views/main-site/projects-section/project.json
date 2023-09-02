@@ -1,0 +1,54 @@
+[
+  {
+    "imgUrl": "../../../assets/img/example-project.jpg",
+    "title": "Paint.app",
+    "subtitle": [
+      "React",
+      "Typescript",
+      "TailWindCSS",
+      "Node.js",
+      "Express",
+      "MongoDB"
+    ],
+    "description": "A real-time coaching app for students learning to paint. This app is my baby, designed and built on my own."
+  },
+  {
+    "imgUrl": "../../../assets/img/example-project.jpg",
+    "title": "Paint.app",
+    "subtitle": [
+      "React",
+      "Typescript",
+      "TailWindCSS",
+      "Node.js",
+      "Express",
+      "MongoDB"
+    ],
+    "description": "A real-time coaching app for students learning to paint. This app is my baby, designed and built on my own."
+  },
+  {
+    "imgUrl": "../../../assets/img/example-project.jpg",
+    "title": "Paint.app",
+    "subtitle": [
+      "React",
+      "Typescript",
+      "TailWindCSS",
+      "Node.js",
+      "Express",
+      "MongoDB"
+    ],
+    "description": "A real-time coaching app for students learning to paint. This app is my baby, designed and built on my own."
+  },
+  {
+    "imgUrl": "../../../assets/img/example-project.jpg",
+    "title": "Paint.app",
+    "subtitle": [
+      "React",
+      "Typescript",
+      "TailWindCSS",
+      "Node.js",
+      "Express",
+      "MongoDB"
+    ],
+    "description": "A real-time coaching app for students learning to paint. This app is my baby, designed and built on my own."
+  }
+]

@@ -27,3 +27,13 @@ body {
     color: $text-color;
   }
 }
+::-moz-selection {
+  /* Code for Firefox */
+  color: $background-color;
+  background: $brand-color;
+}
+
+::selection {
+  color: $background-color;
+  background: $brand-color;
+}
