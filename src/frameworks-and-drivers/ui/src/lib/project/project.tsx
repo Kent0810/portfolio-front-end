@@ -1,4 +1,6 @@
+import { ModalWrapper } from '../modal/modal-wrapper';
 import './project.scss';
+import { useState } from 'react';
 
 type ProjectProps = {
   img: string;
@@ -13,9 +15,21 @@ export const Project = ({
   subtitles,
   description,
 }: ProjectProps) => {
+  const [isModalClicked, setIsModalClicked] = useState(false);
+
+  const toggleModal = () => {
+    setIsModalClicked(!isModalClicked);
+  };
+
   return (
     <div className="project">
-      <div className="project-img">
+      {isModalClicked && (
+        <ModalWrapper
+          isModalClicked={isModalClicked}
+          toggleModal={toggleModal}
+        />
+      )}
+      <div className="project-img" onClick={toggleModal}>
         <img src={img} alt="img" />
       </div>
       <div className="project-text">
@@ -62,7 +76,7 @@ export const Project = ({
           })}
         </div>
         <div className="project-description">
-          {description} <span>Learn more {'>'}</span>
+          {description} <span onClick={toggleModal}>Learn more {'>'}</span>
         </div>
       </div>
     </div>

@@ -10,7 +10,7 @@ import { AT_WORK_SKILLS, FOR_FUN_SKILLS } from './skills.common';
 export const AboutSection: React.FunctionComponent = () => {
   return (
     <SectionWrapper>
-      <div className="about-header">
+      <div className="about-header" id="about">
         <h3>
           About<span>.</span>
         </h3>

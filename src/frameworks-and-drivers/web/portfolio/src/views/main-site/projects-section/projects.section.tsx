@@ -6,7 +6,7 @@ import img from '../../../assets/img/example-project.jpg';
 export const ProjectsSection = () => {
   return (
     <SectionWrapper>
-      <div className="project-header">
+      <div className="project-header" id="projects">
         <h3>
           Projects<span>.</span>
         </h3>

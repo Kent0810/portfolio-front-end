@@ -1,0 +1,87 @@
+@import '../../../../web/portfolio/src/styles.scss';
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  height: 100vh;
+  padding: 4.8rem 1.2rem;
+  background: hsla(0, 0%, 7%, 0.25);
+  backdrop-filter: blur(12px);
+  overflow-y: scroll;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  &-card {
+    animation: 0.2s ease-out 0s 1 popUp forwards;
+
+    width: 100%;
+    max-width: 720px;
+    height: fit-content;
+    border-radius: 1.2rem;
+    overflow: hidden;
+    background-color: #232323;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    cursor: auto;
+  }
+  &-card {
+    img {
+      width: 100%;
+      margin-bottom: -2rem;
+    }
+    &-content {
+      padding: 2.6rem;
+    }
+    &-title {
+      font-size: 3.6rem;
+      margin-bottom: 0rem;
+    }
+    &-description {
+      p {
+        font-size: 1.6rem;
+        font-weight: 400;
+        margin-bottom: 2.4rem;
+      }
+    }
+    &-infomation {
+      h3 {
+        span {
+          font-size: 1.8rem;
+          font-weight: 900;
+          color: $brand-color;
+        }
+      }
+      &-links {
+        display: flex;
+        align-items: center;
+        gap: 1.2rem;
+        font-size: 1.6rem;
+        margin-top: -2rem;
+        svg {
+          margin-right: 0.5rem;
+        }
+        a {
+          display: flex;
+          align-items: center;
+          color: $brand-color;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes popUp {
+  0% {
+    transform: translateY(5%);
+  }
+  90% {
+    transform: translateY(-1%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}

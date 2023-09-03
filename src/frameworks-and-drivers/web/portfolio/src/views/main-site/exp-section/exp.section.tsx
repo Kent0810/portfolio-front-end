@@ -5,7 +5,7 @@ import experiences from './experiences.json';
 export const ExpSection: React.FunctionComponent = () => {
   return (
     <SectionWrapper>
-      <div className="exp-header">
+      <div className="exp-header" id="exp">
         <h3>
           Experience<span>.</span>
         </h3>

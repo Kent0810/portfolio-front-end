@@ -4,7 +4,7 @@ import { SectionWrapper } from '@portfolio/frameworks-and-drivers/ui';
 export const ContactSection = () => {
   return (
     <SectionWrapper>
-      <div className="contact-content">
+      <div className="contact-content" id="contact">
         <div className="contact-title">
           <h1>
             Contact<span>.</span>
